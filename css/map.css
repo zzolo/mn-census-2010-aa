@@ -1,0 +1,14 @@
+/**
+ * Style for the map
+ */
+html, body {
+  height: 100%;
+}
+div#map-wrapper,
+div#map-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
