@@ -12,6 +12,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="js/libs/wax-4.1.8/theme/controls.css">
+  <link rel="stylesheet" href="js/libs/simplemodal/css/basic.css">
   <link rel="stylesheet" href="css/map.css">
 
   <script src="js/libs/modernizr-2.5.2.min.js"></script>
@@ -20,21 +21,35 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <header>
     <h1>African American population percentage in Minnesota by 2010 Census Tract</h1>
-    <p>It is <a href="http://en.wikipedia.org/wiki/Black_History_Month">African American (Black) History Month</a>, and I wanted to map some Census data, so this maps shows the percentage of the population that designated themselves as African American, utilizing <a href="http://www.openstreetmap.org/">OpenStreetMap</a> data and <a href="http://www.census.gov/">US Census Bureau</a> data (via <a href="http://census.ire.org/">IRE</a>).</p>
+    <p>It is <a href="http://en.wikipedia.org/wiki/Black_History_Month">African American (Black) History Month</a>, and I wanted to map some Census data, so this maps shows the percentage of the population that designated themselves as African American, utilizing <a href="http://www.openstreetmap.org/">OpenStreetMap</a> data and <a href="http://www.census.gov/">US Census Bureau</a> data (via <a href="http://census.ire.org/">IRE</a>).  The basics on <a href="#" class="open-modal-how">how this was accomplished</a>.  Fork on <a href="https://github.com/zzolo/mn-census-2010-aa">Github</a>.</p>
   </header>
   <div role="main" id="map-wrapper">
     <div role="main" id="map-container">
     </div>
   </div>
   <footer>
-
+    <div class="modal-how">
+      <ol>
+        <li>The map was created with TileMill.</li>
+        <li>Starting with OSM Bright and OSM data for Minnesota.</li>
+        <li>Utilizing a state boundary from the US Census Bureau, the shape of the Minnesota coule be "cut" out.</li>
+        <li>IRE provides massaged Census data.  Downloaded the CSV of Race and population for Minnesota by Census Tract, as well as the corresponding shapefile.</li>
+        <li>Imported these two sets into the PostGIS database that was set up for the OSM part.</li>
+        <li>Then, it was a matter of utilizing Carto within TileMill to create the correct look of the map.</li>
+        <li>Added some UTF Grid interactivity.</li>
+        <li>Hosted the tiles on Mapbox.</li>
+        <li>Finally, with the help of Wax, Modest Maps, and HTML5Boilerplate, this page was created.</li>
+      </ol>
+    </div>
   </footer>
 
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  <script src="js/libs/simplemodal/jquery.simplemodal.1.4.2.min.js"></script>
   <script src="js/libs/wax-4.1.8/ext/modestmaps.min.js"></script>
   <script src="js/libs/wax-4.1.8/dist/wax.mm.js"></script>
   <script src="js/map.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>
