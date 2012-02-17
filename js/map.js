@@ -12,8 +12,8 @@
       var m = new mm.Map('map-container', new wax.mm.connector(tilejson));
       
       // Center
-      //m.setCenterZoom(new mm.Location(39, -98), 2);
-      m.setCenterZoom(new mm.Location(tilejson.center[1], tilejson.center[0]), 6);
+      m.setCenterZoom(new mm.Location(46.261141, -88.067139), 6);
+      //m.setCenterZoom(new mm.Location(tilejson.center[1], tilejson.center[0]), 6);
       
       // Controls and interactions
       wax.mm.zoomer(m, tilejson).appendTo(m.parent);
