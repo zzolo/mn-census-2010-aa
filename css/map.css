@@ -4,13 +4,40 @@
 html, body {
   height: 100%;
 }
-div#map-wrapper,
 div#map-container {
   position: absolute;
-  top: 0px;
+  top: 100px;
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+header {
+  font-size: .85em;
+  height: 98px;
+  border-bottom: 2px solid #999999;
+  padding: 0 30px;
+}
+header h1 {
+  width: 50%;
+  float: left;
+  font-size: 1.85em;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+}
+header p {
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  width: 49%;
+  float: right;
+}
+header a,
+header a:visited {
+  color: #2E8DE0;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 #map-wrapper .zoomer {
