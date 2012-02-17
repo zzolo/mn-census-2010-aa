@@ -4,7 +4,7 @@
 
 (function($) {
   $(document).ready(function() {
-    var url = 'http://a.tiles.mapbox.com/v3/nps.map-qhh5espx.jsonp';
+    var url = 'http://a.tiles.mapbox.com/v3/zzolo.OSMBrightMN-census.jsonp';
 
     // Create map
     var mm = com.modestmaps;
