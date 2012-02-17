@@ -21,7 +21,8 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <header>
     <h1>African American population percentage in Minnesota by 2010 Census Tract</h1>
-    <p>It is <a href="http://en.wikipedia.org/wiki/Black_History_Month">African American (Black) History Month</a>, and I wanted to map some Census data, so this maps shows the percentage of the population that designated themselves as African American, utilizing <a href="http://www.openstreetmap.org/">OpenStreetMap</a> data and <a href="http://www.census.gov/">US Census Bureau</a> data (via <a href="http://census.ire.org/">IRE</a>).  The basics on <a href="#" class="open-modal-how">how this was accomplished</a>.  Fork on <a href="https://github.com/zzolo/mn-census-2010-aa">Github</a>.</p>
+    <p>It is <a href="http://en.wikipedia.org/wiki/Black_History_Month">African American (Black) History Month</a>, and I wanted to map some Census data, so this maps shows the percentage of the population that designated themselves as African American, utilizing <a href="http://www.openstreetmap.org/">OpenStreetMap</a> data and <a href="http://www.census.gov/">US Census Bureau</a> data (via <a href="http://census.ire.org/">IRE</a>).  <br>
+    <span class="notes">The basics on <a href="#" class="open-modal-how">how this was accomplished</a>.  Fork on <a href="https://github.com/zzolo/mn-census-2010-aa">Github</a>.  Made by <a href="http://zzolo.org">zzolo</a>.</span></p>
   </header>
   <div role="main" id="map-wrapper">
     <div role="main" id="map-container">
@@ -30,15 +31,15 @@
   <footer>
     <div class="modal-how">
       <ol>
-        <li>The map was created with TileMill.</li>
-        <li>Starting with OSM Bright and OSM data for Minnesota.</li>
-        <li>Utilizing a state boundary from the US Census Bureau, the shape of the Minnesota coule be "cut" out.</li>
-        <li>IRE provides massaged Census data.  Downloaded the CSV of Race and population for Minnesota by Census Tract, as well as the corresponding shapefile.</li>
-        <li>Imported these two sets into the PostGIS database that was set up for the OSM part.</li>
-        <li>Then, it was a matter of utilizing Carto within TileMill to create the correct look of the map.</li>
-        <li>Added some UTF Grid interactivity.</li>
-        <li>Hosted the tiles on Mapbox.</li>
-        <li>Finally, with the help of Wax, Modest Maps, and HTML5Boilerplate, this page was created.</li>
+        <li>The map was created with <a href="http://mapbox.com/tilemill/">TileMill</a>.</li>
+        <li>Starting with <a href="https://github.com/mapbox/osm-bright">OSM Bright</a> and <a href="http://www.openstreetmap.org/">OSM</a> data for Minnesota.</li>
+        <li>Utilizing a <a href="http://www.census.gov/geo/www/cob/st2000.html">state boundary from the US Census Bureau</a>, the shape of the Minnesota was "cut" out.</li>
+        <li>IRE provides <a href="http://census.ire.org/">massaged Census data</a>.  Downloaded the CSV of Race and population for Minnesota by Census Tract, as well as the corresponding shapefile.</li>
+        <li>Imported these two sets into the <a href="http://www.postgis.org/">PostGIS</a> database that was set up for the OSM part.</li>
+        <li>Then, it was a matter of utilizing <a href="https://github.com/mapbox/carto">Carto</a> within TileMill to create the correct look of the map and shade value correctly.</li>
+        <li>Added some <a href="http://mapbox.com/mbtiles-spec/utfgrid/">UTF Grid</a> interactivity.</li>
+        <li>Hosted the tiles on <a href="http://mapbox.com/">Mapbox</a>.</li>
+        <li>Finally, with the help of <a href="http://mapbox.com/wax/">Wax</a>, <a href="https://github.com/stamen/modestmaps-js">Modest Maps</a>, and <a href="http://html5boilerplate.com/">HTML5Boilerplate</a>, this page was created.</li>
       </ol>
     </div>
   </footer>
