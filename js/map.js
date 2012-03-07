@@ -4,7 +4,7 @@
 
 (function($) {
   $(document).ready(function() {
-    var url = 'http://a.tiles.mapbox.com/v3/zzolo.OSMBrightMN-census.jsonp';
+    var url = 'http://a.tiles.mapbox.com/v3/apalazzolo.mn-african-american-percentage-by-census-track-2010.jsonp';
 
     // Create map
     var mm = com.modestmaps;
